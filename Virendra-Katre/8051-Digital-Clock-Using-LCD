@@ -1,0 +1,46 @@
+# ⏰ Digital Clock Using 8051 Microcontroller and LCD
+
+This project demonstrates a real-time digital clock built using the **8051 microcontroller (AT89C51)** and a **16x2 LCD display**. The clock displays the current time in the `hh:mm:ss` format and updates every second using embedded C logic.
+
+---
+
+## 📌 Objective
+
+To design and implement a basic digital clock using the 8051 microcontroller, showcasing time management and LCD interfacing in embedded systems.
+
+---
+
+## ⚙️ Working Explanation
+
+- The microcontroller counts seconds, minutes, and hours.
+- Time is displayed continuously on the LCD in the format `hh:mm:ss`.
+- A software-based delay simulates one-second time increments.
+- The display updates in real-time, cycling from `00:00:00` to `23:59:59`.
+
+---
+
+## 🧠 Features
+
+- Real-time clock display  
+- 24-hour format  
+- LCD interfacing using 16x2 display  
+- Written in Embedded C
+
+---
+
+## 🖥️ Circuit Components
+
+- AT89C51 Microcontroller  
+- 16x2 LCD Display  
+- Power Supply  
+- Crystal Oscillator (11.0592 MHz recommended)  
+- Resistors, Capacitors, and Reset circuitry
+
+---
+
+## 📜 Code Snippet (Main Loop)
+```c
+while(1) {
+    display_time();
+    update_time();
+}# 8051-Digital-Clock-Using
